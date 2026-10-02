@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #222222;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #00d2ff;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #cccccc;
+  font-size: 14px;
+}
+
+.gameInfo {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.gameInfo b {
+  color: #ffcc00;
+}
+
+.game-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border: 3px solid #555555;
+  background-color: #000000;
+}
+.game-container canvas {
+  display: block;
+}
+.game-container #menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  background-color: rgba(30, 30, 30, 0.95);
+  border: 2px solid #666666;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+.game-container #menu h2 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #777777;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn:active {
+  background-color: #0056b3;
+}
+
+.controls-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+.controls-buttons .btn {
+  min-width: 120px;
+}
+
+/*# sourceMappingURL=style.css.map */
