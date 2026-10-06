@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>PING PONG</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-$END$
+    <h1>PING PONG </h1>
+
+    <div class="gameInfo">
+        <span>Điểm: <b id="score">0</b></span>
+        <span>Mạng: <b id="lives">3</b></span>
+    </div>
+
+    <div class="game-container">
+        <canvas id="gameCanvas" width="630" height="670"></canvas>
+        <div id="menu">
+            <h2>MENU GAME</h2>
+            <button id="startbtn" class="btn">Bắt đầu</button>
+            <button id="pausebtn" class="btn">Tạm dừng</button>
+            <button id="restartbtn" class="btn">Chơi lại</button>
+        </div>
+        <div id="game-screen">
+        <div id="startMessage" class="hidden">
+            <p>Nhấn ENTER để bắt đầu</p></div>
+        </div>
+    </div>
+
+    <p>Dùng phím mũi tên Trái (←) / Phải (→) hoặc bấm nút để di chuyển</p>
+
+    <div class="controls-buttons">
+        <button id="leftbtn" class="btn">← Sang Trái</button>
+        <button id="rightbtn" class="btn">Sang Phải →</button>
+    </div>
+
+    <script src="game.js"></script>
 </body>
 </html>
